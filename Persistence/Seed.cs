@@ -10,28 +10,28 @@ namespace Persistence
     {
         public static void SeedData(DataContext context)
         {
-            if(!context.Posts.Any())
+            if(!context.Foods.Any())
             {
-                var Posts = new List<Post>
+                var Foods = new List<Food>
                 {
-                    new Post {
-                        Title = "Frist post",
-                        Body = "dsjf;lksahf;klsdahf;l",
-                        Date = DateTime.Now.AddDays(-10)
+                    new Food {
+                        FoodName = "Hamburger",
+                        Body = "Contains Beef, Onion, Colby Jack Cheese, Garlic, Basil, Oregano",
+                        Price = 5 
                     },
-                    new Post {
-                        Title = "Second post",
-                        Body = "dsjf;lksahf;klsdahf;l",
-                        Date = DateTime.Now.AddDays(-10)
+                    new Food {
+                        FoodName = "Spaghetti",
+                        Body = "Contains Italian Sausage, Onion, Garlic, Pasta Sauce",
+                        Price = 4
                     },
-                    new Post {
-                        Title = "Third Post",
-                        Body = "dsjf;lksahf;klsdahf;l",
-                        Date = DateTime.Now.AddDays(-10)
+                    new Food {
+                        FoodName = "Hamburger",
+                        Body = "Contains Lettuce, Arugula, Orange, Olives, Pine Nuts",
+                        Price = 3
                     },
                 };
 
-                context.Posts.AddRange(Posts);
+                context.Foods.AddRange(Foods);
                 context.SaveChanges();
             }
         }

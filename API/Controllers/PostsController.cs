@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Domain;
 using Microsoft.AspNetCore.Mvc;
 using Persistence;
-
+/**
 namespace API.Controllers
 {
     [ApiController]
@@ -81,3 +81,4 @@ namespace API.Controllers
         }
     }
 }
+*/
