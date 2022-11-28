@@ -1,13 +1,13 @@
 <div *ngFor="let food of foods">
     <mat-card class="post-card" routerLink="/foods/{{food.id}}">
-        <mat-card-title>{{food.FoodName}}</mat-card-title>
+        <mat-card-title>{{food.foodName}}</mat-card-title>
         <mat-card-content>
             <p>{{food.body}}</p>
-            <p>{{food.date}}</p>
+            <p>Price {{food.price}} $</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
+            <button mat-button>Customize</button>
+            <button mat-button>Add to cart</button>
         </mat-card-actions>
     </mat-card>
 </div>

@@ -15,6 +15,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ViewPostComponent } from './view-post/view-post.component';
 import { CreatePostComponent } from './create-post/create-post.component';
+import { ViewFoodComponent } from './view-food/view-food.component';
+import { CreateFoodComponent } from './create-food/create-food.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { CreatePostComponent } from './create-post/create-post.component';
     AppComponent,
     HomeComponent,
     ViewPostComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    ViewFoodComponent,
+    CreateFoodComponent
   ],
   imports: [
     BrowserModule,
